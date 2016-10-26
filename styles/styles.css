@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'DINWeb';
+  src: url('#{$assetPath}/fonts/DINWeb.woff') format('woff'); /* Pretty Modern Browsers */
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'DINWeb-Italic';
+  src: url('#{$assetPath}/fonts/DINWeb-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic; 
+}
+@font-face {
+  font-family: 'DINWeb-Bold';
+  src: url('#{$assetPath}/fonts/DINWeb-Bold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Brandon_lightWeb';
+  src: url('#{$assetPath}/fonts/Brandon_lightWeb.eot'); /* IE9 Compat Modes */
+  src: url('#{$assetPath}/fonts/Brandon_lightWeb.woff') format('woff');
+  font-weight: 300; 
+} 
+
+/*shared styles*/ 
+body {
+ 
+  font-family: 'DINWEB', sans-serif;
+
+}
+
+h1 {
+	font-family: 'Brandon_lightWeb', sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 1.25em;
+      color: #000000;
+}
+h2 {
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 1.25em;
+      color: #555;
+      margin-top: 20px;
+}
+p {
+  	font-family: 'DINWEB', sans-serif;
+    color: #555;
+    font-size: 13px;
+}
+a{
+	font-family: 'DINWEB', sans-serif;
+    color: #555;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+/*screen styles*/
+
