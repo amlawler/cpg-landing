@@ -1,59 +1,145 @@
+ 
 @font-face {
   font-family: 'DINWeb';
-  src: url('#{$assetPath}/fonts/DINWeb.woff') format('woff'); /* Pretty Modern Browsers */
+  src: url('../fonts/DINWeb.woff') format('woff'); /* Pretty Modern Browsers */
   font-weight: 400;
 }
+
 @font-face {
   font-family: 'DINWeb-Italic';
-  src: url('#{$assetPath}/fonts/DINWeb-Italic.woff') format('woff');
+  src: local('../fonts/DINWeb-Italic.woff') format('woff');
   font-weight: 400;
   font-style: italic; 
 }
+
 @font-face {
   font-family: 'DINWeb-Bold';
-  src: url('#{$assetPath}/fonts/DINWeb-Bold.woff') format('woff');
+  src: local('../fonts/DINWeb-Bold.woff') format('woff');
   font-weight: 700;
 }
+
 @font-face {
   font-family: 'Brandon_lightWeb';
-  src: url('#{$assetPath}/fonts/Brandon_lightWeb.eot'); /* IE9 Compat Modes */
-  src: url('#{$assetPath}/fonts/Brandon_lightWeb.woff') format('woff');
+  src: local('../fonts/Brandon_lightWeb.eot'); /* IE9 Compat Modes */
+  src: local('../fonts/Brandon_lightWeb.woff') format('woff');
   font-weight: 300; 
-} 
-
-/*shared styles*/ 
-body {
- 
-  font-family: 'DINWEB', sans-serif;
-
 }
 
+
+/*main styles*/
+body { 
+  font-family: 'DINWeb', sans-serif;
+  max-width: 1024px;
+  margin: 0 auto
+
+}
 h1 {
 	font-family: 'Brandon_lightWeb', sans-serif;
-      font-size: 2em;
+      font-size: 1.7em;
       font-weight: bold;
       line-height: 1.25em;
-      color: #000000;
+      color: #988F86;
 }
 h2 {
-      font-size: 1.5em;
-      font-weight: bold;
+	font-family: 'DINWeb-Bold', sans-serif;
+      font-size: 1em;
       line-height: 1.25em;
-      color: #555;
-      margin-top: 20px;
+      color: #58595B;
+      margin-top: 40px;
 }
 p {
-  	font-family: 'DINWEB', sans-serif;
-    color: #555;
-    font-size: 13px;
+	font-size: 1em;
+	color: #988F86;
+	line-height: 1.25em;
 }
-a{
-	font-family: 'DINWEB', sans-serif;
-    color: #555;
-    font-size: 13px;
+.body-copy {
+	font-size: .9em;
+	color: #58595B !important;
+	
+}
+.product-links {
+	position: relative;
+    bottom: 0;
+}
+.product-links a {
+	font-size: .9em;
+	color: #58595B;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.header .abp-logo {
+	width:30%;
+	max-width: 500px;
+	padding: 30px 0 30px 30px;
+	float: left;
+}
+.main-logo {
+	max-width: 100%;
+		
+}
+.logo img {
+	width: 40%;
+	height: auto;
+}
+.main-desc {
+	float: right;
+	width: 50%;
+	margin: 0 30px 0 40px;
+}
+.body {
+	clear: both;
+	padding-top: 75px;
+	width: 95%;
+	margin: 0 auto;
+	
+}
+.block {height: 400px;}
+.block.azek {
+	float:left;
+	width: 44%;
+	padding: 25px 25px;
+	background: linear-gradient(rgba(228, 228, 228, .9), rgba(228, 228, 228, 0.8)),  
+	url("../images/azek-bottom.jpg") no-repeat center top;
+	
+}
+.block.timbertech {
+	
+	float:right;
+	width: 43%;
+	padding: 25px 25px;
+	background: linear-gradient(rgba(228, 228, 228, 0.9), rgba(228, 228, 228, 0.8)),  
+	 url("../images/timbertech-bottom.jpg") no-repeat  center center;
+}
+.button {
+	font-family: 'DINWeb', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+	padding: 15px 15px;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    color: #fff;
     text-decoration: none;
+	float: right;	
 }
+.btn-blue {background: #005BBB;}
+.btn-red {background: #DC5034;}
+@media only screen and (max-width: 570px) {
+	h1 {font-size: 1em;}
+	h2 {font-size: .9em;}
+	p, .body-copy {font-size: .85em;}
+	.block { max-height: 250px;}
+ 	.block.azek, .block.timbertech, .header .abp-logo, .main-desc {width: 90% !important;}
+	.block.azek, .block.timbertech {float: none;}
 
-
-/*screen styles*/
-
+}
+@media only screen and (max-width: 780px) {
+	 .header .abp-logo, .main-desc {float: none;}
+	 .main-desc {width: 85%;}
+	 .block {width:100%;}
+	 .body {padding-top: 50px;}
+}
+@media only screen and (max-width: 830px) {
+	 .block.azek, .block.timbertech {width:41%;}
+}
