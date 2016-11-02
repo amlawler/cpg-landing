@@ -144,7 +144,7 @@ p {
 	text-decoration: underline;
 }
 /*media screens*/
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 620px) {
 	h1 {font-size: 1.2em;}
  	.block.azek, .block.timbertech  {
 	 	width: 100% !important;
