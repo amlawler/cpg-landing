@@ -76,10 +76,16 @@ p {
 .brands {
 	clear: both;
 	padding-top: 35px;
-	width: 95%
+	width: 95%;
 	margin: 0 auto;
+	display: flex;
 	
 }
+.cover-img {
+		width: 100%;
+		max-height: 250px;
+		overflow: hidden;
+	}
 .block.azek {
 	float:left;
 	width: 48%;
@@ -90,6 +96,7 @@ p {
 	width: 48%;
 	max-height: 628px;
 	background-color: #E4E4E4;
+	margin-left: 4%;
 }
 .cover-img img{
 	width:100%;
@@ -139,9 +146,13 @@ p {
 /*media screens*/
 @media only screen and (max-width: 570px) {
 	h1 {font-size: 1.2em;}
- 	.block.azek, .block.timbertech  {width: 90% !important;}
+ 	.block.azek, .block.timbertech  {
+	 	width: 100% !important;
+	 	float: none;
+	 }
+	 .block.timbertech{
+	 	margin-left: 0 !important;}
  	 .abp-logo {width: 70% !important;}
-	.block.azek, .block.timbertech {float: none;}
 	.cover-img {
 		height: 155px !important;
 	}
@@ -154,15 +165,13 @@ p {
 		 width: 85%;
 		 float: none;}
 	 .block {width:100%;}
-	 .brands {padding-top: 50px;}
+	 .brands {
+		 display: block;
+		 padding-top: 50px;
+		}
 }
 @media only screen and (max-width: 830px) {
  	 .main-desc {
 	 	 width: 100% !important;
 		 padding-top: 30px;}
-	.cover-img {
-		width: 100%;
-		height: 200px;
-		overflow: hidden;
-	}
 }
