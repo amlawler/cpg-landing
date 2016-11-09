@@ -39,7 +39,7 @@ h2 {
       font-size: 1em;
       line-height: 1.25em;
       color: #58595B;
-      margin-top: 40px;
+      margin-top: 25px;
 }
 p {
 	font-family: 'DinWeb';
@@ -104,25 +104,14 @@ p {
 	}
 .content {
 	padding: 25px 25px;}
-.logo img {
+.azek .logo img {
 	width: 40%;
 	height: auto;
 }
-.button {
-	font-family: 'DINWeb', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-	padding: 10px 10px;
-    height: auto;
-    width: auto;
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-	float: right;	
+.timbertech .logo img {
+	width: 56%;
+	height: auto;
 }
-.btn-blue {background: #005BBB;}
-.btn-red {background: #DC5034;}
 .product-links {
 	position: relative;
     bottom: 0;
